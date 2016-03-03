@@ -222,14 +222,6 @@ html, body, button, input, select, textarea {
     margin-top: 50px;
     z-index: 1; }
 
-.hero1_inner_playbutton {
-    width: 147px; height: 169px;
-    display: inline-block;
-    background: url('http://lililove.me/wp-content/uploads/2016/02/icon_play.png');
-    background-size: contain;
-    box-shadow: none !important;
-}
-
 .mh_50vh {
     min-height: 50vh; }
 
@@ -255,6 +247,10 @@ p.bigtext {
     line-height: 31px;
     font-weight: 400;
     letter-spacing: 0; }
+
+.smalltext {
+    font-size: 17px;
+    line-height: 21px; }
 
 /* Custom brand colors */
 
@@ -296,7 +292,7 @@ p.bigtext {
 }
 
 .default_blue {
-    background: #fff;
+    background: none;
     border-color: #6666ff;
     color: #6666ff; }
 
@@ -396,3 +392,45 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
 
 .marginbtm_zero {
     margin-bottom: 5px !important; }
+
+/* Receipt custom styles */
+.receipt_leftcol {
+    width: 50%;
+    display: block;
+    float: left;
+    padding-right: 40px; }
+
+.receipt_rightcol {
+    width: 50%;
+    display: block;
+    float: right;
+    padding-right: 20px; }
+
+.receipt_colsreset {
+    float: none; clear: both; }
+
+.course_programm {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: #F7F6F4;
+    padding: 70px 40px; }
+
+.course_programm:before, .course_programm:after {
+    display: table;
+    content: " "; }
+
+.course_programm:after {
+    clear: both; }
+
+.course_programm_inner {
+    display: flex; display: -webkit-flex; display: -ms-flex; }
+
+.course_programm_inner > div {
+    width: 33.3%;
+    padding: 20px; }
+
+.course_programm_inner > div img {
+    border-radius: 5px; }
+
+.margintop_15 {
+    margin-top: 15px !important; }
