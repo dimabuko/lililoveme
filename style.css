@@ -434,3 +434,22 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
 
 .margintop_15 {
     margin-top: 15px !important; }
+
+.contents_demo {
+    margin-left: 10px;
+    font-size: 13px;
+    border: 1px solid rgba(102,102,255,0.4);
+    border-radius: 45px;
+    font-weight: 300;
+    padding: 1px 10px 3px 10px; 
+    top: -1px;
+    position: relative; }
+
+/* tweaking B-QUOTE style */
+
+blockquote {
+    color: #999 !important;
+    border-color: rgba(0,0,0,0.1) !important;
+    border-left-width: 1px;
+    font-style: normal;
+    font-weight: 300; }
