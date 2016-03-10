@@ -39,6 +39,11 @@ body:not(.custom-background-image):before, body:not(.custom-background-image):af
 .site-inner {
     max-width: none; }
 
+@media screen and (min-width: 61.5625em) {
+.site-main {
+    margin-bottom: 0em; } }
+
+
 /* removing margin of header */
 
 @media screen and (min-width: 61.5625em) {
@@ -122,9 +127,9 @@ html, body, button, input, select, textarea {
     line-height: 30px; }
 }
 
-/* Hide entry Header */
+/* Hide entry Header and post edit link */
 
-.entry-header {
+.entry-header, .post-edit-link {
 	display: none; }
 
 /* tune entry header size */
@@ -453,3 +458,54 @@ blockquote {
     border-left-width: 1px;
     font-style: normal;
     font-weight: 300; }
+
+
+/* Footer Styling */
+
+@media screen and (min-width: 56.875em) {
+.site-footer {
+    padding: 60px 4.5455% 3.5em;
+    background: #44413F;
+    align-items: baseline; }
+
+.footer_navigation_thirdcolumn {
+    width: 40%;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 300; }
+
+.footer_links {
+    width: 30%;
+    padding: 20px; }
+
+.footer_navigation_paymentlogos {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 300; }
+
+.footer_navigation_paymentlogos a, .footer_navigation_thirdcolumn a {
+    color: rgba(255,255,255,0.4); }
+
+.footer_links_col1 {
+    width: 25%;
+    padding-right: 0px; }
+
+.footer_links_col2 {
+    width: 35%;
+    padding-left: 0px; }
+
+.footer_links ul, .footer_links ul li {
+    list-style: none; }
+
+.footer_links ul li a {
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300; }
+}
