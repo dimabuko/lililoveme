@@ -225,7 +225,8 @@ html, body, button, input, select, textarea {
 .hero1_inner {
     max-width: 800px;
     margin-top: 50px;
-    z-index: 1; }
+    z-index: 1;
+    min-height: 225px; }
 
 .mh_50vh {
     min-height: 50vh; }
@@ -236,14 +237,14 @@ html, body, button, input, select, textarea {
 /* Custom Typography styles */
 
 .lead1 {
-    font-size: 21px;
-    line-height: 25px;
+    font-size: 21px !important;
+    line-height: 25px !important;
     font-weight: 300;
     letter-spacing: -0.2; }
 
 .lead2 {
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 17px !important;
+    line-height: 20px !important;
     font-weight: 300;
     letter-spacing: 0; }
 
@@ -271,6 +272,23 @@ p.bigtext {
 .site-branding, .site-header-menu, .header-image {
     margin-top: 0;
     margin-bottom: 0; }
+
+.site-branding {
+    margin: 0;
+    position: absolute; }
+
+.site-header-menu {
+    margin: 0 auto; }
+
+.user_menu {
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    padding-right: 20px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #333 !important;
+    padding-left: 20px; }
 }
 
 /* link_button global style */
