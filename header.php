@@ -39,7 +39,9 @@
 					if ( $description || is_customize_preview() ) : ?>
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
-				</div><!-- .site-branding -->
+					
+					<?php do_action('wpml_add_language_selector'); ?>				
+					</div><!-- .site-branding -->
 
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
