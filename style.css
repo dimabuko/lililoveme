@@ -205,7 +205,8 @@ html, body, button, input, select, textarea {
     margin-bottom: 0px; }
 
 .hero1_container_headerfix {
-    top: -90px; }
+    top: -90px;
+    z-index: 0; }
 
 .hero1_container img {
     position: absolute;
@@ -313,23 +314,41 @@ p.bigtext {
 
 .primary_blue {
     background: #6666ff;
-    border-color: #6666ff;
-}
+    border-color: #6666ff; }
+
+.primary_red {
+    background: #ff6646;
+    border-color: #ff6646; }
 
 .default_blue {
     background: none;
     border-color: #6666ff;
     color: #6666ff; }
 
+.default_red {
+    background: none;
+    border-color: #ff6646;
+    color: #ff6646; }
 
 .default_blue:hover {
     color: #3D3DF2;
     border-color: #3D3DF2;
     background: #F7F7F7; }
 
+.default_red:hover {
+    color: #FF2C00;
+    border-color: #FF2C00;
+    background: #F7F7F7; }
+
 .primary_blue:hover {
     background: #3D3DF2;
     border-color: #3D3DF2;
+    transition: 0.2s;
+    color: #fff; }
+
+.primary_red:hover {
+    background: #FF2C00;
+    border-color: #FF2C00;
     transition: 0.2s;
     color: #fff; }
 
