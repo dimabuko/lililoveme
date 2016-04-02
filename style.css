@@ -132,6 +132,117 @@ html, body, button, input, select, textarea {
 .entry-header, .post-edit-link {
 	display: none; }
 
+/* Hide Join Us link on Login Page */
+
+.swpm-login-form-register-link, .swpm-remember-me { display:none; }
+
+/* Tune Style of Login Page */
+
+.swpm-login-widget-form {
+    max-width: 460px; 
+    margin: 0 auto; }
+
+.swpm-label {
+    font-weight: 300; }
+
+#swpm-login-form {
+    position: relative; }
+
+.swpm-forgot-pass-link {
+    position: absolute;
+    top: 89px;
+    right: 0;
+    font-weight: 300; }
+
+.swpm-login-submit {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center; }
+
+.swpm-forgot-pass-link a {
+    color: #333;
+    opacity: 0.3; }
+
+/* tune registration page */
+
+#swpm-registration-form {
+    max-width: 620px;
+    margin: 0 auto; }
+
+#swpm-registration-form label {
+    font-weight: 300; }
+
+#swpm-registration-form table, #swpm-registration-form table td {
+    border: none; }
+
+#swpm-registration-form table td:first-child {
+    width: 30%; }
+
+.swpm-registration-membership-level-row {
+    display: none; }
+
+/* Tune Style of Forgot Password Page */
+
+.swpm-pw-reset-widget-form {
+    max-width: 460px; 
+    margin: 0 auto; }
+
+.swpm-pw-reset-email-label {
+    font-weight: 300; }
+
+.swpm-pw-reset-submit-button {
+    text-align: center;
+    margin-top: 30px; }
+
+.swpm-pw-reset-email-input {
+    margin-top: 0px; }
+
+.swpm-reset-pw-success-email { display:none; }
+
+.swpm-reset-pw-success {
+    text-align: center;
+    font-weight: 300; }
+
+/* Tune Error popovers */
+
+.formErrorContent {
+    border: none !important;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, "Roboto", "Roboto Light", Arial, "Lucida Grande", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    color: #FF6646 !important;
+    background: #F7F6F4 !important;
+    width: 260px !important;
+    padding: 8px 10px !important; }
+
+.greenPopup .formErrorContent {
+    color: #33be40 !important; }
+
+.blackPopup .formErrorContent {
+    color: #333 !important; }
+
+.formErrorArrow { display: none !important; }
+
+/* Tune Profile Page styles */
+
+#swpm-editprofile-form {
+    max-width: 620px;
+    margin: 0 auto; }
+
+#swpm-editprofile-form table td:first-child {
+    width: 30%; }
+
+#swpm-editprofile-form table, #swpm-editprofile-form table td {
+    border: none; }
+
+.swpm-profile-username-row, .swpm-profile-membership-level-row { display: none; }
+
 /* tune entry header size */
 
 @media screen and (min-width: 61.5625em) {

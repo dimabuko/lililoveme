@@ -60,7 +60,7 @@
 								<?php
 									if ( is_user_logged_in() ) {
 										global $current_user; get_currentuserinfo();
-										echo('<a href="http://lililove.me/membership-login/"><div class="user_menu user_menu_registered">' . $current_user->user_login . '</div></a>');
+										echo('<a href="http://lililove.me/membership-login/membership-profile/"><div class="user_menu user_menu_registered">' . $current_user->user_login . '</div></a>');
 									} else {
 									       echo '<a href="http://lililove.me/membership-login/"><div class="user_menu">Вход/регистрация</div></a>';
 									}
