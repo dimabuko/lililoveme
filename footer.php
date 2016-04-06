@@ -19,12 +19,11 @@
 		<div class="footer_links footer_links_col2"><?php wp_nav_menu( array( 'theme_location' => 'footery' ) ); ?></div>
 		
 		<div class="footer_navigation_thirdcolumn">© 2016 — Lililove.me<br /><br />
-		Сервис разработан в Республике Беларусь ИП Подоляк Н.В. Свидетельство о регистрации Мингорисполкома от 13 октября 2014 в Едином государственном регистре юридических лиц и индивидуальных предпринимателей #192358340<br />
-<a href="contacts">Реквизиты и контактная информация</a>
+		Сервис разработан в Республике Беларусь ИП Подоляк Н.В. Свидетельство о регистрации Мингорисполкома от 13 октября 2014 в Едином государственном регистре юридических лиц и индивидуальных предпринимателей №192358340<br />Наш адрес: Республика Беларусь, Минск, ул.Бельского, д.10, к.15<br />Время работы: 9:00—18:00, без выходных<br />
+<a href="/contacts/">Реквизиты и контактная информация</a>
 		</div>
 
-		<div class="footer_navigation_paymentlogos"><br /><img src="http://lililove.me/wp-content/uploads/2016/03/payment_logos.png" /><br /><br />Платежи осуществляются c высокой степенью защиты<br />c использованием протокола SSL 3.0<br />
-<a href="payment">Правила оплаты и возрата</a></div>
+		<div class="footer_navigation_paymentlogos"><br /><img src="http://lililove.me/wp-content/uploads/2016/03/payment_logos.png" /><br /><br />Платежи принимаются через <a href="http://webpay.by" target="_blank">систему интернет-платежей «Веб Пэй»</a><br /><a href="/payment/">Подробнее об оплате и возврате</a></div>
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
