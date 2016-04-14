@@ -12,6 +12,19 @@
  Text Domain:  twenty-sixteen-child
 */
 
+/* SCROLL TOP CUSTOMIZATION */
+
+a.scrollup-image {
+    opacity: 0.2;
+    bottom: 60px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px; }
+
+a.scrollup-image:hover {
+    opacity: 0.4; }
+
 /* ------------------------------------------- */
 /* ----------------- MOBILE ------------------ */
 
@@ -25,6 +38,9 @@
 
 
 /* Fixing margins of musthead */
+
+.site-content {
+    padding-top: 30px; }
 
 #message { display: none; }
 
@@ -70,7 +86,7 @@
     font-weight: 300;
     border: none !important;
     letter-spacing: 0;
-    padding: 7px 15px 7px 15px;
+    padding: 7px 0px 7px 15px;
     line-height: 23px;
     margin: 0px; }
 
@@ -235,7 +251,7 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
 button, button[disabled]:hover, button[disabled]:focus, input[type="button"], input[type="button"][disabled]:hover, input[type="button"][disabled]:focus, input[type="reset"], input[type="reset"][disabled]:hover, input[type="reset"][disabled]:focus, input[type="submit"], input[type="submit"][disabled]:hover, input[type="submit"][disabled]:focus, .menu-toggle.toggled-on, .menu-toggle.toggled-on:hover, .menu-toggle.toggled-on:focus, .pagination:before, .pagination:after, .pagination .prev, .pagination .next, .page-links a {
     background: none !important; }
 
-button:focus, a:focus {
+button:focus, a:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
     outline: none; }
 
 .link_button {
@@ -259,14 +275,51 @@ button:focus, a:focus {
     background: #6666ff;
     border-color: #6666ff; }
 
+.primary_blue:active {
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.4) !important;
+    background: #3030C2;
+    border-color: #3030C2;
+    color: #fff !important; }
+
+.primary_blue:focus, .primary_blue:hover {
+    color: #fff !important; }
+
 .default_blue {
     background: none;
     border-color: #6666ff;
     color: #6666ff; }
 
+.default_blue:active {
+    color: #3D3DF2;
+    border-color: #3D3DF2;
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.3) !important;
+    background: rgba(0,0,0,0.05); }
+
 .primary_white {
     background: none;
     border-color: rgba(255,255,255,0.5); }
+
+.primary_white:active {
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.4) !important;
+    border-color: rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.1);
+    color: #fff !important; }
+
+.primary_white:focus {
+    color: #fff !important; }
+
+/* BUTTON SHOULD BE PRESSED BRO */
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    color: #3D3DF2;
+    border-color: #3D3DF2;
+    background-color: rgba(0,0,0,0.03); }
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+    color: #3D3DF2;
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.05);
+}
 
 .contents_demo {
     margin-left: 10px;
@@ -429,6 +482,14 @@ fieldset, pre, abbr, acronym, table, th, td, input[type="text"], input[type="ema
     text-align: center; 
     margin: 20px auto; }
 
+/* DEMO ARTICLE LABEL IN HEADING */
+
+.demo_heading_label {
+    font-size: 12px;
+    position: absolute;
+    font-weight: 300;
+    line-height: 19px; }
+
 /* ----------------- MOBILE ------------------ */
 /* ------------------------------------------- */
 
@@ -478,6 +539,20 @@ fieldset, pre, abbr, acronym, table, th, td, input[type="text"], input[type="ema
 /* article print button */
 
 .article_print_p, .article_print { display: none; }
+
+/* fixind course video layer on mobile in demo articles */
+
+.course_video p {
+    color: #333 !important; }
+
+.course_video p a {
+    background: #6666ff !important;
+    border-color: #6666ff !important; } 
+
+/* fixing label size for registration form */
+
+#swpm-registration-form label {
+    font-size: 11px; }
 
 }
 
@@ -998,6 +1073,15 @@ p.bigtext {
     border-color: #3D3DF2;
     background: #F7F7F7; }
 
+.default_blue:active {
+    color: #3D3DF2;
+    border-color: #3D3DF2;
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.3) !important;
+    background: rgba(0,0,0,0.05); }
+
+.default_blue:focus {
+    color: #3D3DF2; }
+
 .default_red:hover {
     color: #FF2C00;
     border-color: #FF2C00;
@@ -1007,6 +1091,15 @@ p.bigtext {
     background: #3D3DF2;
     border-color: #3D3DF2;
     transition: 0.2s;
+    color: #fff !important; }
+
+.primary_blue:active {
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.4) !important;
+    background: #3030C2;
+    border-color: #3030C2;
+    color: #fff !important; }
+
+.primary_blue:focus {
     color: #fff !important; }
 
 .primary_red:hover {
@@ -1023,6 +1116,21 @@ p.bigtext {
     border-color: rgba(255,255,255,1);
     transition: 0.2s;
     color: #fff !important; }
+
+.primary_white:active {
+    box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.4) !important;
+    border-color: rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.1);
+    color: #fff !important; }
+
+.primary_white:focus {
+    color: #fff !important; }
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: rgba(0,0,0,0.03) !important; }
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+    background-color: rgba(0,0,0,0.05) !important; }
 
 .xl {
     height: 63px;
@@ -1365,6 +1473,13 @@ div.wpcf7-response-output {
 .hello_video {
     padding-bottom: 30px; }
 
+/* DEMO ARTICLE LABEL IN HEADING */
+
+.demo_heading_label {
+    font-size: 21px;
+    position: absolute;
+    font-weight: 300;
+    line-height: inherit; }
 
 /* ------------------------------------------- */
 /* ------------ STEP BY STEP STYLES ---------- */
