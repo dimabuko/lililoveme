@@ -23,7 +23,7 @@
 <a href="/contacts/">Реквизиты и контактная информация</a>
 		</div>
 
-		<div class="footer_navigation_paymentlogos"><br /><img src="http://lililove.me/wp-content/uploads/2016/03/payment_logos.png" /><br /><br />Платежи принимаются через <a href="http://webpay.by" target="_blank">систему интернет-платежей «Веб Пэй»</a><br /><a href="/payment/">Подробнее об оплате и возврате</a></div>
+		<div class="footer_navigation_paymentlogos"><br /><img src="http://lililove.me/wp-content/uploads/2016/04/payment_logos_assist_1.3.png" /><br /><br />Платежи принимаются с помощью <a href="http://www.belassist.by/" target="_blank">системы Assist</a><br /><a href="/payment/">Подробнее об оплате и возврате</a></div>
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">

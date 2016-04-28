@@ -106,6 +106,12 @@ a.scrollup-image:hover {
     font-weight: 300;
     color: #333; }
 
+.user_menu a {
+    color: #333; }
+
+.user_menu a:hover {
+    color: #6666ff; }
+
 .logout_icon {
     background: url(http://lililove.me/wp-content/uploads/2016/04/signout.png) center center no-repeat;
     background-size: cover;
@@ -338,6 +344,9 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
     margin: 10px 0px 0px 0px;
     line-height: 16px !important; }
 
+.nav_upgrade {
+    display: none; }
+
 .heading_rapper {
     display: none; }
 
@@ -366,6 +375,37 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
 .course_programm:after {
     clear: both; }
 
+/* ------------------------------------------------------------ */
+/* TIPS */
+
+.tips_inner > div img {
+    border-radius: 5px; }
+
+.tips_inner > div {
+    margin-bottom: 30px;
+    position: relative; }
+
+.tips {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: #fff;
+    padding: 0px 20px 20px 20px; }
+
+.tips:before, .tips:after {
+    display: table;
+    content: " "; }
+
+.tips:after {
+    clear: both; }
+
+.tips_thumb_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+
+/* ------------------------------------------------------------ */
 /* Footer links */
 
 .footer_links ul {
@@ -489,6 +529,60 @@ fieldset, pre, abbr, acronym, table, th, td, input[type="text"], input[type="ema
     position: absolute;
     font-weight: 300;
     line-height: 19px; }
+
+/* YANDEX PAYMENT FORM */
+
+.buy_yandex_form p {
+    font-weight: 300; }
+
+/* ------------ PRICING STYLES ---------- */
+
+.fs_35 {
+    font-size: 14px; }
+
+.red {
+   color: #FF6646; }
+
+.h_80 {
+    height: 30px; }
+
+.pricing_margintop_0 {
+    margin-top: 0px !important; }
+
+.pricing_marginbtm_30 {
+    margin-bottom: 20px !important; }
+
+.pricing_marginbtm_50 {
+    margin-bottom: 40px; }
+
+.pricing_blue {
+    background: #A4D3EB; }
+
+.pricing_card {
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px 30px 10px 30px;
+    border-radius: 3px;
+    box-shadow: 0px 60px 40px 0px rgba(0,0,0,0.10), 0px 4px 10px 0px rgba(34,39,48,0.30), 0px 30px 45px 0px rgba(20,37,52,0.30);
+    max-width: 300px; }
+
+.price_big {
+    font-size: 45px !important;
+    position: relative;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 20px 10px 20px 10px;
+    letter-spacing: -1.6px; }
+
+.price_big:before {
+    content: "Br";
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -15px;
+    font-size: 14px;
+    font-weight: 300; }
+
 
 /* ----------------- MOBILE ------------------ */
 /* ------------------------------------------- */
@@ -1335,6 +1429,48 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
 .margintop_15 {
     margin-top: 15px !important; }
 
+/* ------------------------------------------------------------ */
+/* TIPS */
+
+.tips {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: #fff;
+    padding: 0px 40px 70px 40px; }
+
+.tips:before, .tips:after {
+    display: table;
+    content: " "; }
+
+.tips:after {
+    clear: both; }
+
+.tips_inner {
+    display: flex; display: -webkit-flex; display: -ms-flex; }
+
+.tips_inner > div {
+    position: relative;
+    width: 33.3%;
+    padding: 20px;
+    margin-bottom: 0px;
+    border-radius: 3px; }
+
+.tips_inner div:hover {
+    transition: 0.15s;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1); }
+
+.tips > div img {
+    border-radius: 5px; }
+
+.tips_thumb_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+
+/* ------------------------------------------------------------ */
+
 .contents_demo {
     margin-left: 20px;
     font-size: 13px;
@@ -1349,6 +1485,30 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
     margin: 0 0 0 10px; }
 
 .contents_demo:hover {
+    background: #3D3DF2;
+    border-color: #3D3DF2;
+    transition: 0.2s;
+    color: #fff !important; }
+
+/* ----------- NAV UPGRADE ----------------- */
+
+.nav_upgrade {
+    display: block;
+    background: #6666ff;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 13px;
+    border: 1px solid rgba(102,102,255,0.4);
+    border-radius: 45px;
+    font-weight: 300;
+    padding: 1px 10px 3px 10px; 
+    top: -1px;
+    position: relative;
+    display: inline;
+    width: auto;
+    margin: 0 10px 0 10px; }
+
+.nav_upgrade:hover {
     background: #3D3DF2;
     border-color: #3D3DF2;
     transition: 0.2s;
@@ -1481,6 +1641,16 @@ div.wpcf7-response-output {
     font-weight: 300;
     line-height: inherit; }
 
+
+/* YANDEX PAYMENT FORM STYLES */
+
+.buy_yandex_form {
+    max-width: 500px;
+    margin: 0 auto; }
+
+.buy_yandex_form p {
+    font-weight: 300; }
+
 /* ------------------------------------------- */
 /* ------------ STEP BY STEP STYLES ---------- */
 
@@ -1494,6 +1664,80 @@ div.wpcf7-response-output {
     border: 1px solid #666;
     text-align: center; 
     margin: 20px auto; }
+
+/* ------------------------------------------- */
+/* ------------ PRICING STYLES ---------- */
+
+.fs_35 {
+    font-size: 35px; }
+
+.red {
+   color: #FF6646; }
+
+.h_80 {
+    height: 90px; }
+
+.pricing_margintop_0 {
+    margin-top: 0px !important; }
+
+.pricing_marginbtm_30 {
+    margin-bottom: 20px !important; }
+
+.pricing_marginbtm_50 {
+    margin-bottom: 40px; }
+
+.pricing_blue {
+    background: #A4D3EB; }
+
+.pricing_card {
+    background: #fff;
+    margin: 0 auto;
+    padding: 50px 90px 10px 90px;
+    border-radius: 3px;
+    box-shadow: 0px 60px 40px 0px rgba(0,0,0,0.10), 0px 4px 10px 0px rgba(34,39,48,0.30), 0px 30px 45px 0px rgba(20,37,52,0.30);
+    max-width: 900px; }
+
+.pricing_card_form {
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px 90px 10px 90px;
+    border-radius: 3px;
+    box-shadow: 0px 60px 40px 0px rgba(0,0,0,0.10), 0px 4px 10px 0px rgba(34,39,48,0.30), 0px 30px 45px 0px rgba(20,37,52,0.30);
+    max-width: 900px; }
+
+.price_big {
+    font-size: 100px !important;
+    position: relative;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 20px 10px 60px 10px;
+    letter-spacing: -1.6px; }
+
+.price_big:before {
+    content: "Br";
+    display: block;
+    position: absolute;
+    top: -21px;
+    left: -46px;
+    font-size: 35px;
+    font-weight: 300; }
+
+.pricing_form {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: #A4D3EB;
+    padding: 70px 40px 100px 40px; }
+
+.pricing_form:before, .pricing_form:after {
+    display: table;
+    content: " "; }
+
+.pricing_form:after {
+    clear: both; }
+
+.pricing_form_inner {
+    display: flex; display: -webkit-flex; display: -ms-flex; }
+
 
 /* BETA ALERT */
 
