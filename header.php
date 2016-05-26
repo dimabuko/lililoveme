@@ -75,6 +75,14 @@ mixpanel.init("4dc732b17e43039add3045bf35fe4908");</script><!-- end Mixpanel -->
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
 					
+					<?php
+						if (SwpmMemberUtils::is_member_logged_in()) {
+						$member_level = SwpmMemberUtils::get_logged_in_members_level();
+						if ($member_level == "2") { 
+						_e('<a href="/pricing/" class="nav_upgrade">Записаться на курс</a>','wpml_theme'); }
+						}
+					?>
+
 					<!-- <?php do_action('wpml_add_language_selector'); ?>-->				
 					</div><!-- .site-branding -->
 
@@ -97,7 +105,7 @@ mixpanel.init("4dc732b17e43039add3045bf35fe4908");</script><!-- end Mixpanel -->
 										global $current_user; get_currentuserinfo();
 										echo('<a href="/membership-login/membership-profile/" title="Редактировать профиль"><div class="user_menu user_menu_registered">' . $current_user->user_login . '</div></a>&nbsp;<a href="/membership-login/?swpm-logout=true" class="logout_icon" title="Выйти"></a>');
 									} else {
-									       echo '<div class="user_menu"><a href="/membership-login/">Войти</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/membership-join/membership-registration/">Зарегистрироваться</a></div>';
+									       _e('<div class="user_menu"><a href="/membership-login/">Войти</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/membership-join/membership-registration/">Зарегистрироваться</a></div>','wpml_theme');
 									}
 								?>
 

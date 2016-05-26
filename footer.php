@@ -19,11 +19,12 @@
 		<div class="footer_links footer_links_col2"><?php wp_nav_menu( array( 'theme_location' => 'footery' ) ); ?></div>
 		
 		<div class="footer_navigation_thirdcolumn">© 2016 — Lililove.me<br /><br />
-		Сервис разработан в Республике Беларусь ИП Подоляк Н.В. Свидетельство о регистрации Мингорисполкома от 13 октября 2014 в Едином государственном регистре юридических лиц и индивидуальных предпринимателей №192358340<br />Наш адрес: Республика Беларусь, Минск, ул.Бельского, д.10, к.15<br />Время работы: 9:00—18:00, без выходных<br />
-<a href="/contacts/">Реквизиты и контактная информация</a>
+		<?php _e('Сервис разработан в Республике Беларусь ИП Подоляк Н.В. Свидетельство о регистрации Мингорисполкома от 13 октября 2014 в Едином государственном регистре юридических лиц и индивидуальных предпринимателей №192358340','wpml_theme'); ?>
+<br /><?php _e('Наш адрес: Республика Беларусь, Минск, ул.Бельского, д.10, к.15','wpml_theme'); ?><br /><?php _e('Время работы: 9:00—18:00, без выходных','wpml_theme'); ?><br />
+<?php _e('<a href="/contacts/">Реквизиты и контактная информация</a>','wpml_theme'); ?>
 		</div>
 
-		<div class="footer_navigation_paymentlogos"><br /><img src="http://lililove.me/wp-content/uploads/2016/04/payment_logos_assist_1.3.png" /><br /><br />Платежи принимаются с помощью <a href="http://www.belassist.by/" target="_blank">системы Assist</a><br /><a href="/payment/">Подробнее об оплате и возврате</a></div>
+		<div class="footer_navigation_paymentlogos"><br /><img src="http://lililove.me/wp-content/uploads/2016/04/payment_logos_assist_1.3.png" /><br /><br /><?php _e('Платежи принимаются с помощью <a href="http://www.belassist.by/" target="_blank">системы Assist</a><br /><a href="/payment/">Подробнее об оплате и возврате</a>','wpml_theme'); ?></div>
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
