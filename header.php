@@ -61,6 +61,14 @@ mixpanel.init("4dc732b17e43039add3045bf35fe4908");</script><!-- end Mixpanel -->
 	<div class="site-inner">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
+					<?php
+						if (SwpmMemberUtils::is_member_logged_in()) {
+						$member_level = SwpmMemberUtils::get_logged_in_members_level();
+						if ($member_level == "2") { 
+						_e('<a href="/pricing/" class="nav_upgrade">Записаться на курс</a>','wpml_theme'); }
+						}
+					?>
+
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-header-main">
 				<div class="site-branding">
@@ -74,16 +82,8 @@ mixpanel.init("4dc732b17e43039add3045bf35fe4908");</script><!-- end Mixpanel -->
 					if ( $description || is_customize_preview() ) : ?>
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
-					
-					<?php
-						if (SwpmMemberUtils::is_member_logged_in()) {
-						$member_level = SwpmMemberUtils::get_logged_in_members_level();
-						if ($member_level == "2") { 
-						_e('<a href="/pricing/" class="nav_upgrade">Записаться на курс</a>','wpml_theme'); }
-						}
-					?>
 
-					<!-- <?php do_action('wpml_add_language_selector'); ?>-->				
+					<?php do_action('wpml_add_language_selector'); ?>				
 					</div><!-- .site-branding -->
 
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>

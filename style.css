@@ -344,7 +344,7 @@ button:active, input[type="button"]:active, input[type="reset"]:active, input[ty
     margin: 10px 0px 0px 0px;
     line-height: 16px !important; }
 
-.nav_upgrade {
+.nav_upgrade, #lang_sel_click {
     display: none; }
 
 .heading_rapper {
@@ -581,6 +581,23 @@ fieldset, pre, abbr, acronym, table, th, td, input[type="text"], input[type="ema
     top: -11px;
     left: -15px;
     font-size: 14px;
+    font-weight: 300; }
+
+.price_big_byn {
+    font-size: 80px !important;
+    position: relative;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 20px 10px 30px 10px;
+    letter-spacing: -1.6px; }
+
+.price_big_byn:before {
+    content: "Br";
+    display: block;
+    position: absolute;
+    top: -22px;
+    left: 18px;
+    font-size: 16px;
     font-weight: 300; }
 
 .sp-input {
@@ -1666,17 +1683,17 @@ button, button[disabled]:hover, button[disabled]:focus, input[type="button"], in
     display: block;
     background: #FF6646;
     color: #fff;
-    margin-left: 20px;
     font-size: 13px;
     line-height: 1.4em;
     border: 1px solid #FF6646;
     border-radius: 45px;
     font-weight: 300;
     padding: 1px 12px 3px 12px; 
-    margin: 0 10px 0 10px;
-    position: absolute;
-    top: 10px;
-    left: 80px; }
+    margin: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 4; }
 
 .nav_upgrade:hover {
     background: #E03816;
@@ -1748,8 +1765,9 @@ blockquote {
 /* LANG SELECTOR */
 
 #lang_sel_click {
+    display: block;
     top: 10px;
-    right: 0;
+    left: 90px;
     position: absolute !important;
     font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light",  Helvetica, "Roboto", "Roboto Light", Arial, "Lucida Grande", sans-serif !important;
 }
@@ -1772,6 +1790,8 @@ blockquote {
 #lang_sel_click li {
     width: 120px; }
 
+#lang_sel_click ul ul {
+    border-top: 1px solid rgba(0,0,0,0); }
 
 
 /* CONTACT FORM 7 SUCCESS MESSAGE */
@@ -1901,6 +1921,23 @@ div.wpcf7-response-output {
     position: absolute;
     top: -21px;
     left: -46px;
+    font-size: 35px;
+    font-weight: 300; }
+
+.price_big_byn {
+    font-size: 140px !important;
+    position: relative;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 30px 10px 70px 10px;
+    letter-spacing: -1.6px; }
+
+.price_big_byn:before {
+    content: "Br";
+    display: block;
+    position: absolute;
+    top: -34px;
+    left: 0px;
     font-size: 35px;
     font-weight: 300; }
 
